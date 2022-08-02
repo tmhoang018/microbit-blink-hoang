@@ -1,6 +1,12 @@
 
 > Open this page at [https://tmhoang018.github.io/microbit-blink-hoang/](https://tmhoang018.github.io/microbit-blink-hoang/)
+## Usage
 
+### Blink   #animationsblink
+Blink an LED at a given location.
+```blocks
+animations.blink(0,0,100)
+```
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
