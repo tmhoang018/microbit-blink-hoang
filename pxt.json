@@ -2,8 +2,7 @@
     "name": "microbit-blink-hoang",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
         "main.blocks",
