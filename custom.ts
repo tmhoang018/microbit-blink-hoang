@@ -9,24 +9,17 @@ enum MyEnum {
  * Custom blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace Hoang {
+namespace animations {
     /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
+     * Blink an LED at a particular interval
+     * @param x horizontal led coordinate
+     * @param y vertical led coordinate
+     * @param interval time in milli seconds between blinks
      */
-    //% block="do stuff with $n and $s and $e"
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
-    }
-
-    /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
-     */
-    //% block="compute fib with $value"
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
+    //% block= " blink x $x y $y every $interval ms "
+    export function blink(x: number, y: number, interval: number): void {
+    let sprite =game.createSprite(x,y)
+    sprite.setBlink(interval)
+    sprite.blink()
     }
 }
